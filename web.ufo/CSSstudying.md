@@ -50,5 +50,14 @@ CSS选择器分类：<br>
 这条CSS规则将运用于id=“test”的HTML元素
 
 #### CSS类选择器
-1
+`该选择器选择有特定class属性的HTML元素。`
+`还可以指定特定HTML元素受类的影响。`
+>.center&nbsp;&nbsp;(所有带有class="center"的HTML元素变成红色)//&nbsp;p.center（所有带有class="center"的`<p>`元素变成红色)
+{
+    text-align:center;
+    color:red;
+}
 
+
+附：引用多个类
+>`<p class="center large">xxx</p>`这表示该段落引用了center和large两个类。
