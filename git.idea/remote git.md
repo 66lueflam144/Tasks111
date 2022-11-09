@@ -22,5 +22,3 @@
 命令行：`git clone git@github.com:Anxxx/远程库名.git`
 
 (`ls`可以查看该repository已有文件)
-w
-w
