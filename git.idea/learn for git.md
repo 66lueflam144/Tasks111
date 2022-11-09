@@ -1,4 +1,12 @@
 before this starts,<br>`git config user.name`<br>`git config user.email`用于查询<br>
+`git config --global user.name 想改的用户名称`
+`git config --global user.email 邮箱`用于修改git的全局用户及其email。
+
+`git config user.name想改的名字`
+`git config user.email 邮箱`用于修改当前project的用户及其email。
+
+>重新提交就是删除本地repository里的文件，提交删除后，把复制好的文件重新上传is ok。
+
 
 
 # ==1.git bush 和 git GUI 的区别：==
