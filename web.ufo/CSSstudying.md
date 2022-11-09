@@ -34,10 +34,11 @@ CSS选择器分类：<br>
 - <a href=https://www.w3school.com.cn/css/css_pseudo_classes.asp>伪类选择器</a><br>
 - <a href=https://www.w3school.com.cn/css/css_attribute_selectors.asp> 属性选择器</a><br>
 - <a href=https://www.w3school.com.cn/css/css_pseudo_elements.asp>伪元素选择器</a><br>
-
+  
+  ___
 #### CSS元素选择器
 `根据元素名称来选择HTML元素`如上面例子中的`<p>`
-
+____
 #### CSS id选择器`#`
 `id 选择器使用 HTML 元素的 id 属性来选择特定元素。`
 `元素的 id 在页面中是唯一的，因此 id 选择器用于选择一个唯一的元素！`
@@ -50,7 +51,7 @@ id 名称不能以数字开头
     color:red;
 }
 这条CSS规则将运用于id=“test”的HTML元素
-
+____
 #### CSS类选择器`.`
 `该选择器选择有特定class属性的HTML元素。`
 `需选择拥有特定 class 的元素，请写一个句点（.）字符，后面跟类名。`
@@ -65,7 +66,7 @@ id 名称不能以数字开头
 >`<p class="center large">xxx</p>`这表示该段落引用了center和large两个类。
 
 类名不能以数字开头。
-
+____
 #### CSS通用选择器`*`
 
 `该选择器平等地影响页面上所有HTML元素`
@@ -75,6 +76,7 @@ example:
     color:blue;
 }
 
+____
 #### CSS分组选择器`,`
 `分组选择器选取所有具有相同样式定义的 HTML 元素`
 如，对`h1`,`p`,合并写成:
