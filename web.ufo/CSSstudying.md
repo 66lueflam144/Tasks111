@@ -84,3 +84,6 @@ ____
     text-aligggn:center;
     color:red;
 }
+
+
+### CSS设置元素基础样式
