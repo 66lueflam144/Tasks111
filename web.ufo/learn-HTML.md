@@ -45,4 +45,34 @@ ___Hyper Text Markup Language___
 `<h1>xx</h1>`
 从1到6逐渐减小标题大小。
 
-# HTML链接  
+## HTML链接
+种语法：
+
+`<a href="url">link text</a>`normal版
+
+`<a href="URL">xxx</a>`（xxx为链接外貌）
+
+title属性：`<a href="URL" title="xxx">yyy</a>`（光标显示title）
+
+target 属性：`<a href="URL" target="zzz">xxx</a>`<i>（定义被链接的文档在何处显示）</i>
+
+name属性：`<a name="label">xxx</a>`(使用 name 属性创建 HTML 页面中的书签。)
+使用示例
+>`<a name="xxx">y-z</a>`(对锚命名/创建书签)
+`<a href="#xxx">z</a>`(文档内创建指向该锚的链接)&nbsp;&nbsp;//<br>`<a href="URL#xxx">z</a>`(其他页面指向该锚的链接)
+
+<b>"链接文本" 不必一定是文本。图片或其他 HTML 元素都可以成为链接。</b>
+
+## HTML图片
+
+### 定义图像语法
+`<img src="URL" />`
+- <b>背景图片</b>：<br>`<body background="URL">`git和jpg图片可作为HTML背景，当图片小于页面的时候，图片会进行重复。
+- <b>排列图片</b>：<br>(1)普适版：`xxx<img src="URL">xxx`<br>(2)进阶版对齐方式：`<img src="URL" align="bottom/middle/top">`<br>bottom是默认对齐方式。
+- <b>浮动图像</b>：<br>`<img src="URL（gif）" align="left/right">`图像浮动在文档左/右两侧。
+- <b>调整图像大小</b>：<br>`<img src="URL" width="x" height="y">`
+- <b>图像链接</b>：<br>`<a href="URL">`<br>`<img border="0" src="URL" />`<br>`</a>`<br>将图片作为链接使用。
+- 创建图像映射：<img src="">
+
+
+## HTML表格和列表
