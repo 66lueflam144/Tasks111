@@ -194,3 +194,14 @@ a:active {color:#0000FF;} /* 已选中的链接 */<br>
 > p i:first-child {<br>
   color: blue;<br>
 }
+
+- example 3.<br>
+>选择器匹配作为另一个元素的第一个子元素的 <p> 元素中的所有 <i> 元素：
+p:first-child i {<be>
+  color: blue;<br>
+}
+
+
+#### CSS :lang伪类
+
+>允许您为不同的语言定义特殊的规则
