@@ -205,3 +205,15 @@ p:first-child i {<be>
 #### CSS :lang伪类
 
 >允许您为不同的语言定义特殊的规则
+
+#### other CSS伪类
+<b></b><a href=https://www.w3school.com.cn/css/css_pseudo_classes.asp>CSS伪类whole</a></b>
+
+
+### CSS盒模型（box model）
+- <a href=https://www.runoob.com/css/css-boxmodel.html>runoob CSS box model参考</a>
+- <a href=https://zhuanlan.zhihu.com/p/264250523>知乎CSS box model参考</a>
+- <a href=https://www.php.cn/css-tutorial-409334.html>CDSN CSS box model参考</a>
+___
+box model
+<img src=https://www.runoob.com/images/box-model.gif />
