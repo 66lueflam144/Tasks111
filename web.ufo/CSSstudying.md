@@ -80,10 +80,21 @@ ____
 #### CSS分组选择器`,`
 `分组选择器选取所有具有相同样式定义的 HTML 元素`
 如，对`h1`,`p`,合并写成:
->h1,p{
-    text-aligggn:center;
-    color:red;
+>h1,p{<br>
+    text-aligggn:center;<br>
+    color:red;<br>
 }
 
 
 ### CSS设置元素基础样式
+
+#### CSS颜色
+
+
+1.背景颜色`<p style="background-color:Yellow;">背景颜色</p>`
+效果如下：
+<p style="background-color:Yellow;">背景颜色</p>
+
+2.文本颜色`<p style="color:Tomato;">文本颜色</p>`
+效果如下：
+<p style="color:Tomato;">文本颜色</p>
