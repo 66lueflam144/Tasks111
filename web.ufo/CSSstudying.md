@@ -157,6 +157,25 @@ ___
 `border-width:xxpx;`<br>
 `border-width:xxpx yypx;`对应top & bottom，right & left。
 
-### CSS伪类
+### CSS伪类`selector:pseudo-class{property:value;}`
+
+>伪类用于定义元素的特殊状态。
+>1.设置鼠标悬停在元素上时的样式<rb>
+2.为已访问和未访问链接设置不同的样式<br>
+3.设置元素获得焦点时的样式
+___
+#### 锚伪类(anchor伪类)
+以不同方式显示链接`a:pseudo{property:value;}`
+>a:link {color:#FF0000;} /* 未访问的链接 */<br>
+a:visited {color:#00FF00;} /* 已访问的链接 */<br>
+a:hover {color:#FF00FF;} /* 鼠标划过链接 */<br>
+a:active {color:#0000FF;} /* 已选中的链接 */<br>
+
+注意：<br> 
+1.在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+
+2.在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
+
+3.伪类的名称不区分大小写。
 
 
