@@ -90,12 +90,73 @@ ____
 
 #### CSS颜色
 
-
-1.背景颜色`<p style="background-color:Yellow;">背景颜色</p>`
-效果如下：
+---
+1.背景颜色`<p style="background-color:Yellow;">背景颜色</p>`<br>
+效果如下：<br>
 <p style="background-color:Yellow;">背景颜色</p>
+<br><b><a href="https://www.w3school.com.cn/css/css_background.asp">CSS背景颜色设置</a></b>
 
-2.文本颜色`<p style="color:Tomato;">文本颜色</p>`
-效果如下：
+---
+2.文本颜色`<p style="color:Tomato;">文本颜色</p>`<br>
+效果如下：<br>
 <p style="color:Tomato;">文本颜色</p>
-hh
+
+----
+3.边框颜色`<h1 style="border:2px solid red;">边框颜色</h1>`<br>
+效果如下：<br>
+<h1 style="border:2px solid red;">边框颜色</h1>
+
+___
+#### CSS颜色值
+>在 CSS 中，可以使用 RGB 值、HEX 值、HSL 值、RGBA 值或者 HSLA 值来指定颜色
+
+- <a href="https://www.w3school.com.cn/css/css_colors_rgb.asp">RGB颜色</a>
+- <a href="https://www.w3school.com.cn/css/css_colors_hex.asp">HEX颜色</a>
+- <a href="https://www.w3school.com.cn/css/css_colors_hsl.asp">HSL颜色</a>
+
+#### CSS背景
+
+- <b><a href="https://www.w3school.com.cn/css/css_background.asp">CSS背景颜色设置</a>
+- <a href="https://www.w3school.com.cn/css/css_background_image.asp">背景图像设置</a>
+- <a href="https://www.w3school.com.cn/css/css_background_repeat.asp">背景重复</a>
+- <b><a href="https://www.w3school.com.cn/css/css_background_attachment.asp"></b>背景附着</a>指定背景图像是应该滚动还是固定的（不会随页面的其余部分一起滚动）
+- <b><a href="https://www.w3school.com.cn/css/css_background_shorthand.asp">背景属性简写</a></b>
+___
+#### CSS边框`<border-style>`
+
+>边框各边：`border-top-style`<br>`boder-right/left-style`<br>`border-bottom-style`
+
+`p.dotted{border-style:dotted;}`
+`p.mix{border-style:dotted dashed solid double;}`混合边框
+
+1.属性设置
+|属性值|效果|
+|---|---|
+|dotted|点线边框|
+|dashed|虚线边框|
+|solid|实线边框|
+|double|双边边框|
+|groove|3d坡口边框|
+|ridge|3d脊线边框|
+|inset/outset|3dinset/outset边框|
+|none|无边框|
+|hidden|隐藏边框|
+
+附：
+- 如果`border-style`属性设置4个值，则分别对应<i>top，right，bottom，left</i>
+- 如果该设置3个值，则分别对应<i>top,right & left,bottom</i>
+- 如果2个值，<i>top & bottom,right & left</i>
+- 如果1个值，应用于all。
+
+2.边框颜色<br>
+`border-color`<br>
+
+也可以使用RGB，HEX，HSL值。
+
+3.边框宽度<br>
+`border-width:xxpx;`<br>
+`border-width:xxpx yypx;`对应top & bottom，right & left。
+
+### CSS伪类
+
+
