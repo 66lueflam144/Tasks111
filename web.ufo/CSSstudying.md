@@ -4,10 +4,10 @@
 >*__释义二__*：将样式信息与网页内容分离的一种语言，为每个元素定义样式，主要用于美化HTML页面。
 
 ps:HTML标签构成了网页的基本结构，只是一个框架，CSS就是来装修的。
-## __CSS作用__
+## &Delta;__CSS作用__
 >通过设置对应的css样式属性可以修改HTML文档内各元素的显示，位置等样式。
 
-## __CSS语法__
+## &Delta;__CSS语法__
 
 CSS rule-set由**选择器**和**声明块**组成。
 |类别|功能|
@@ -157,7 +157,7 @@ ___
 `border-width:xxpx;`<br>
 `border-width:xxpx yypx;`对应top & bottom，right & left。
 
-### CSS伪类`selector:pseudo-class{property:value;}`
+## &Delta;CSS伪类`selector:pseudo-class{property:value;}`
 
 >伪类用于定义元素的特殊状态。
 >1.设置鼠标悬停在元素上时的样式<rb>
@@ -210,13 +210,15 @@ p:first-child i {<be>
 <b></b><a href=https://www.w3school.com.cn/css/css_pseudo_classes.asp>CSS伪类whole</a></b>
 
 
-### CSS盒模型（box model）
+## &Delta;CSS盒模型（box model）
+
+&euro;`控制元素和元素之间，或者元素和内容之间的位置关系；`
 - <a href=https://www.runoob.com/css/css-boxmodel.html>runoob CSS box model参考</a>
 - <a href=https://zhuanlan.zhihu.com/p/264250523>知乎CSS box model参考</a>
 - <a href=https://www.php.cn/css-tutorial-409334.html>CDSN CSS box model参考</a>
 - <a href=https://www.cnblogs.com/qianguyihao/p/7256371.html>cnblogs CSS box model参考</a>
 ___
-box model
+box model<br>
 <img src=https://www.runoob.com/images/box-model.gif />
 
 
@@ -226,7 +228,7 @@ box model
 &hearts;Content(内容) - 盒子的内容，显示文本和图像。
 
 
-<img src=http://img.smyhvae.com/2015-10-03-css-27.jpg />
+<img src=http://img.smyhvae.com/2015-10-03-css-27.jpg /><br><br>
 
 <img src=http://img.smyhvae.com/2015-10-03-css-30.jpg />
 
@@ -237,3 +239,7 @@ box model
 总元素的高度=高度+顶部填充+底部填充+上边框+下边框+上边距+下边距<br>
 
 如果元素的宽度（width）一定的情况下，W3C盒模型的宽度（width）不包括内边距和边框，IE盒模包括。&diams;
+CSS盒模型和IE盒模型的区别：
+
+>*在 标准盒子模型中，width 和 height 指的是内容区域的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。*<br>
+*IE盒子模型中，width 和 height 指的是内容区域+border+padding的宽度和高度。*
