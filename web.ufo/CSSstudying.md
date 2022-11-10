@@ -243,3 +243,6 @@ CSS盒模型和IE盒模型的区别：
 
 >*在 标准盒子模型中，width 和 height 指的是内容区域的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。*<br>
 *IE盒子模型中，width 和 height 指的是内容区域+border+padding的宽度和高度。*
+    
+<img src=https://github.com/66lueflam144/Tasks111/blob/main/web.ufo/%E7%9B%92%E6%A8%A1%E5%9E%8B1.png />    
+    
