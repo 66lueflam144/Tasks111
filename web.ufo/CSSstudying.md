@@ -179,3 +179,18 @@ a:active {color:#0000FF;} /* 已选中的链接 */<br>
 3.伪类的名称不区分大小写。
 
 #### CSS first-child伪类
+>使用该伪类来选择父元素的第一个子元素。
+
+- examlpe 1:<br>
+>匹配第一个`<p>`元素：
+>p:first-child<br>
+{<rb>
+    color:blue;<br>
+}
+这里`<p>`作为任何元素的第一个子元素。
+
+- example 2：<br>
+>匹配所有` <p> `元素中的第一个 `<i> `元素：
+> p i:first-child {<br>
+  color: blue;<br>
+}
