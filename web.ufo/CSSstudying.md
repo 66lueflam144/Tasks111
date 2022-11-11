@@ -1,4 +1,5 @@
 *`cascading style sheets`*
+
 # __CSS__ 
 >*__释义一__*：一种用来为结构化文档（HTML文档或XML应用）添加样式的计算机语言，其文件扩展名为`.css`。<br>
 >*__释义二__*：将样式信息与网页内容分离的一种语言，为每个元素定义样式，主要用于美化HTML页面。
@@ -252,4 +253,10 @@ CSS盒模型和IE盒模型的区别：
 
 ___
 ## CSS position定位（5 kinds）
+`CSS 中的 position 属性用来设置元素在页面中的位置，通过该属性您可以把任何属性放置在任何您认为合适的位置。position 属性有 5 个可选值`
 
+
+<a href=http://c.biancheng.net/css3/position.html>CSS position参考1</a><br>
+<a href=https://blog.csdn.net/qq_35508835/article/details/115573672>CSS position参考2</a>
+___
+- static(正常定位)：position属性默认值。且当为该属性值时，top，right。bottom,left,z-index均不生效。
