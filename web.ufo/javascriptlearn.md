@@ -40,4 +40,39 @@ ___
 xxxx就是内容，打开网页时弹窗显示警告xxx。
 
 #### document.write()
+仅仅输出文档，如果文档加载后执行document.write()整个HTML页面会被覆盖。（类似切换了界面）
+
+#### innerHTML
+如：<br>`document.getElementByID("xxx").innerHTML="yyy"`<br>
+向标识为xxx的HTML元素插入yyy。
+
+#### console.log()
+<a href=https://www.runoob.com/js/js-output.html>请往这看</a>
+
+___
+### JavaScript语法
+
+
+>每个语句以`;`结束，语句块使用`{ }`,不建议一行多语句。
+请注意，JavaScript严格区分大小写，如果弄错了大小写，程序将报错或者运行不正常。
+
+- 赋值语句：`var y=xxx;`
+可以是=1；也可以是=1+3；
+- 字符串但仍视为语句`'xxx';`
+
+### 数据类型
+(数据家族的故事连载于<a href=https://www.liaoxuefeng.com/wiki/1022910821149312/1023020925712064>&hearts;click to know more details</a>)
+
+- Number
+- 字符串(字符串豪门家族的故事请看<a href=https://www.liaoxuefeng.com/wiki/1022910821149312/1023020952022784>&spades;click to know more about `\`</a>)
+- 布尔值
+- 比较运算符
+- null和undefined
+- 数组 &nbsp;&clubs;<a href=https://www.liaoxuefeng.com/wiki/1022910821149312/1023020967732032>more details</a>
+- 对象
+- 变量
+
+
+
+
 

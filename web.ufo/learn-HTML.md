@@ -1,11 +1,4 @@
-<!--
- * @Author: 66lueflam144 117815219+66lueflam144@users.noreply.github.com
- * @Date: 2022-11-09 17:48:23
- * @LastEditors: 66lueflam144 117815219+66lueflam144@users.noreply.github.com
- * @LastEditTime: 2022-11-10 09:50:02
- * @FilePath: \web.ufod:\GitHub\blueflame\Tasks111\web.ufo\learn-HTML.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+
 ___Hyper Text Markup Language___
 `HTML是一种标记语言`:astonished:
 # HTML基础 :innocent:
