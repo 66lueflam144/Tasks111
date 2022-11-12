@@ -28,3 +28,16 @@ ___
 >`<script src="xxxx.js></script>`
 
 ### JavaScript输出
+
+|类别|作用|
+|---|---|
+|window.alert()|弹出警告窗|
+|document.write()|将内容写入HTML文档中|
+|innerHTML|写入HTML元素中|
+|console.log()|写入浏览器控制台|
+
+#### windows.alert(xxx)
+xxxx就是内容，打开网页时弹窗显示警告xxx。
+
+#### document.write()
+
