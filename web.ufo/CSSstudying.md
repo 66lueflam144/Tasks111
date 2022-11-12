@@ -259,4 +259,28 @@ ___
 <a href=http://c.biancheng.net/css3/position.html>CSS position参考1</a><br>
 <a href=https://blog.csdn.net/qq_35508835/article/details/115573672>CSS position参考2</a>
 ___
-- static(正常定位)：position属性默认值。且当为该属性值时，top，right。bottom,left,z-index均不生效。
+- <b>static(正常定位)：</b>position属性默认值。且当为该属性值时，top，right。bottom,left,z-index均不生效。
+- <b>relative（相对定位）</b>：通过 top、right、bottom、left 这 4 个属性来设置元素相对于正常位置的偏移量，在此过程中不会对其它元素造成影响。
+- <b>absolute（绝对定位）</b>：相对于第一个非 static 定位的父级元素进行定位，可以通过 top、right、bottom、left 这 4 个属性来设置元素相对于父级元素位置的偏移量。如果没有满足条件的父级元素，则会相对于浏览器窗口来进行定位。使用绝对定位的元素不会对其它元素造成影响。
+- <b>fixed(固定定位)</b>:相对于浏览器的创建进行定位，可以使用 top、right、bottom、left 这 4 个属性来定义元素相对于浏览器窗口的位置。使用固定定位的元素无论如何滚动浏览器窗口元素的位置都是固定不变的。
+- <b>sticky(粘性定位):</b>它是 relative 和 fixed 的结合体，能够实线类似吸附的效果，当滚动页面时它的效果与 relative 相同，当要滚动到屏幕之外时则会自动变成 fixed 的效果。
+
+___
+## CSS布局
+
+
+
+### <i>版本一</i>
+|布局|描述|
+|---|---|
+|传统盒模型布局|xxx|
+|文档流布局|按照文档的顺序一个一个显示出来，块元素独占一行，行内元素共享一行|
+|浮动布局|浮动方式布局就是使用 float 属性，使元素脱离文档流，浮动起来|
+|定位布局|可以通过 position 属性来进行定位|
+|flex布局|为盒状模型提供最大的灵活性，使用该布局方式可以实现几乎所有你想要的效果|
+
+### <i>版本二</i>
+
+<img src=https://ask.qcloudimg.com/http-save/yehe-6353923/8r1gyeun0r.jpeg?imageView2/2/w/1620 />
+
+
