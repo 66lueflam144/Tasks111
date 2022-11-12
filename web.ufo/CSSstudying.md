@@ -282,5 +282,7 @@ ___
 ### <i>版本二</i>
 
 <img src=https://ask.qcloudimg.com/http-save/yehe-6353923/8r1gyeun0r.jpeg?imageView2/2/w/1620 />
+    
+    <a href=https://cloud.tencent.com/developer/article/1515810>原文参考</a>
 
 
