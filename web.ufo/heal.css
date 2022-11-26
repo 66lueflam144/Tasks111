@@ -1,0 +1,327 @@
+.na{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+    width: 100%;
+    height: 80px;
+    border-radius: 25px;
+}
+li{
+    float: left;
+    
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 35px 85px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(255, 106, 0);
+    color: gray;
+}
+/*背景图片设置*/
+#content{
+    background-image: url(./images/background_Homepage.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+
+}
+/*geek图片设置*/
+#geek{
+    position:absolute;
+    top: 25%;
+    left: 35%;
+}
+
+#geek:hover{
+    transform: scale(120%);
+    transition: 0.5s;
+}
+ /*Introduc部分*/
+ .Introduction{
+    /*标题设置*/
+    position:absolute;
+    top: 130%;
+    left: 40%;
+    font-size: larger;
+    color: purple;
+ }
+
+.intr{
+    /*不同专业框整体设置*/
+    width: 70%;
+    height: 450px;
+    border:gray solid 5px;
+    border-radius: 30px;
+    box-shadow: 1.5px 1.5px 1.2px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+}
+
+#kfh:hover{
+    /*插入的图片的设置*/
+    transform: rotate(20deg);
+    transition: 1s;
+}
+
+ 
+.cp{
+        /*产品*/
+
+    width: 935px;
+    height: 450px;
+    border: gray solid 5px;
+    border-radius: 30px;
+    box-shadow: 1.5px 1.5px 1.2px;
+    position: absolute;
+    top: 110%;
+}
+
+.gkf{
+        /*游戏开发*/
+
+    width: 935px;
+    height: 450px;
+    border: gray solid 5px;
+    border-radius: 30px;
+    box-shadow: 1.5px 1.5px 1.2px;
+    position: absolute;
+    top: 230%;
+}
+
+.gms{
+        /*游戏美术*/
+
+    width: 935px;
+    height: 450px;
+    border: gray solid 5px;
+    border-radius: 30px;
+    box-shadow: 1.5px 1.5px 1.2px;
+    position: absolute;
+    top: 350%;
+}
+ /*About Us部分*/
+           .boxab{
+            /*整体边框*/
+            width: 70%;
+            height: 450px;
+            position: absolute;
+            left: 15%;
+            top: 460%;
+            box-shadow: 0.3 0.3 0.4 0;
+            padding: 0;
+            margin: 0;
+            border: gray solid 5px;
+            border-radius: 45px;
+            background-color: rgb(245, 243, 239);
+            text-align: center;
+            background-image: url(./images/decoration_Decoration.png),url(./images/decoration_Decoration.png),url(./images/decoration_Decoration.png),url(./images/decoration_Decoration.png);
+            background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+            background-position: right top,right bottom,left top,left bottom;
+
+            z-index: 1;
+            background-size: 60px 40px;
+           }
+          /*内部三个部分*/    
+           .kg1:hover{
+            transform: rotate(30deg);
+            transition: all 1s;
+           }
+           .kg1{
+            width: 150px;
+            height: 300px;
+            border: purple solid 3px;
+            border-radius: 25px;
+            position: absolute;
+            left: 10%;
+
+           }
+
+           .kg2:hover{
+            transform: rotate(30deg);
+            transition: all 1s;
+           }
+           .kg2{
+            width: 160px;
+            height: 300px;
+            border: purple solid 3px;
+            border-radius: 25px;
+            position: absolute;
+            left: 40%;
+
+           }
+
+           .kg3:hover{
+            transform: rotate(-30deg);
+            transition: all 1s;
+           }
+           .kg3{
+            width: 150px;
+            height: 300px;
+            border: purple solid 3px;
+            border-radius: 25px;
+            position: absolute;
+            left: 70%;
+
+           }
+
+           .butterfly{
+                /*蝴蝶图片设置*/
+
+            position: absolute;
+            right: -1%;
+            top: 70%;
+           }
+           .butterfly:hover{
+            transform: scale(120%);
+            border-color: purple;
+           }
+
+           /*conta us部分*/
+           .boxcu{
+            width: 70%;
+            height: 500px;
+            position: absolute;
+            top: 540%;
+            left: 15%;
+            box-shadow: 0.3 0.3 0.4 0;
+            padding: 0;
+            margin: 0;
+            border: green solid 5px;
+            border-radius: 45px;
+            background-color: white
+           }
+           .tree1{
+                /*插入的图片的设置*/
+
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 0.001s;
+           }
+
+           .tree2{
+                /*插入的图片的设置*/
+
+            position: absolute;
+            right: 0;
+            top: 0;
+           }
+
+           .h{
+                /*标题的设置*/
+
+            position: absolute;
+            left: 40%;
+
+           }
+
+           ul.a{    /*列表的设置*/
+
+            list-style-type: circle;
+            position: absolute;
+            left: 25%;
+            top: 20%;
+           }
+
+           .b{
+                /*ps部分的设置*/
+
+            width: 34%;
+            height: 250px;
+            position: absolute;
+            left: 30%;
+            top: 45%;
+            color: gray;
+           }
+
+           .melon{    /*插入的图片的设置*/
+
+            
+                position: absolute;
+                right: 16%;
+                top: 55%;
+           }
+           .qq,.em,.git{
+                /*三个按钮的设置*/
+
+            background-color: green;
+            border: 3px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 20px;
+            cursor: pointer;
+           }
+           .qq{
+                /*位置设置*/
+
+            position: absolute;
+            bottom: 10%;
+            left: 20%;
+           }
+           .em{
+            /*位置设置*/
+            position: absolute;
+            bottom: 10%;
+            left: 40%;
+           }
+           .git{
+            /*位置设置*/
+            position: absolute;
+            bottom: 10%;
+            left: 60%;
+           }
+        /*按钮悬停设置*/
+           .qq:hover{
+            background-color: greenyellow;
+           }
+
+           .em:hover{
+            background-color: greenyellow;
+           }
+ 
+           .git:hover{
+            background-color: greenyellow;
+           }
+           a.bili:link{color: white;}
+           a.bili:visited{color: white;text-decoration: none;}
+           a.bili:hover{text-decoration: none;}
+
+           /*Q&A部分*/
+           .mq{
+            /*整体设置*/
+            width: 70%;
+            height: 600px;
+            padding: 0;
+            background-image: url(./images/background_QA.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: rgb(78, 172, 235) solid 5px;
+            border-radius: 30px;
+            position: absolute;
+            top: 640%;
+            left: 15%;
+            
+           }
+
+           .f1{
+            /*插入文本的设置*/
+            width: 500px;
+            height: 50px;
+            text-align: left;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+           }
+
+           
