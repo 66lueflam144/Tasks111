@@ -23,15 +23,15 @@
 ---
 **输入**
 - 在交互终端输入：`input()函数`
-  >'>>> name=input()
-  kim chaewon
-  >'>>> name
-  'kim chaewon'
-  >'>>> print(name)
+  >'>>> name=input() <br>
+  kim chaewon <br>
+  >'>>> name <br>
+  'kim chaewon' <br>
+  >'>>> print(name) <br>
   kim chaewon
 
 - 在.py文件里输入
-  >name=input('don\'t say you are ditto')
+  >name=input('don\'t say you are ditto')<br>
    print(name)
 ---
 **输出**
@@ -39,8 +39,8 @@
 print（）函数
 
 例子：
->`print('100+200')`——100+200
-`print(100+200)`——300
+>`print('100+200')`——100+200 <br>
+`print(100+200)`——300 <br>
 `print('ditto','attention')`——ditto attention
 
 ---
@@ -55,19 +55,19 @@ print（）函数
 ---
 **列表**
 
->`>>> name=['minji','haerin']`
-`>>> name`
-`['minji','haerin']`
-`>>>print(name)`
-`['minji','haerin']`
-`>>> len(name)`
+>`>>> name=['minji','haerin']` <br>
+`>>> name` <br>
+`['minji','haerin']` <br>
+`>>>print(name)` <br>
+`['minji','haerin']` <br>
+`>>> len(name)` <br>
 `2`
 
 **列表索引**
 
->`>>> name[0]`
-`'minji'`
-`>>> name[-1]`
+>`>>> name[0]` <br>
+`'minji'` <br>
+`>>> name[-1]` <br>
 `'haerin'`
 
 **追加、删除，插入**
