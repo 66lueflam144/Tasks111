@@ -23,3 +23,4 @@
 <b><a href="https://github.com/66lueflam144/demo1/tree/master/test2" title="lipstick on class">复刻网址的代码</a></b>
 
 ## `pythonn` :alien:
+<a href="https://github.com/66lueflam144/Tasks111/blob/main/pythonn/dittto.md">学习笔记</a>
