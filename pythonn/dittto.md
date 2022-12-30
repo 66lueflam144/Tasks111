@@ -52,7 +52,7 @@ print（）函数
 ...i
 ...likt it like that''')
 
-<font size='1'>`...`是转行回车之后自动出现的。</font>
+><font size='1'>`...`是转行回车之后自动出现的。</font>
 ---
 **列表**
 
