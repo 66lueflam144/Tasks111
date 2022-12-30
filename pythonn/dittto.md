@@ -47,9 +47,9 @@ print（）函数
 ---
 **换行**
 指在交互界面
->'>>>print('''i
-...said
-...i
+>'>>>print('''i<br>
+...said<br>
+...i<br>
 ...likt it like that''')
 
 ><font size='1'>`...`是转行回车之后自动出现的。</font>
