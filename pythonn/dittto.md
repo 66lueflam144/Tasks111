@@ -108,7 +108,7 @@ example:
 `gender: m`
 
 ---
-**可变参数**
+**可变参数**<br>
 <font size=2>可变指传入的参数个数是可变的，0到任意个。</font>
 
 > `def test(*numbers):`<br>
@@ -119,3 +119,74 @@ example:
 `print(test(1,2,3))`
 
 参数`n`内部接收到的是一个tuple。
+
+ps:
+如果已经有了一个list或tuple，调用一个可变参数的两种方法：
+>`n=[1,2,3]`<br>
+`test(n[0],n[1],n[2])`
+
+>`n=[1,2,3]`<br>
+`test(*n)`——*n表示把该list所有元素作为可变参数传进去。
+
+---
+
+**关键字参数**
+该参数允许传入任意个含参数名的参数，这些关键字参数在函数内部自动组成一个dict。
+关键字参数可以拓展函数功能。
+
+>`def ra(name,age,**more):`
+  `print('name:',name,'age:',age,'other:',more)`
+
+>`extra={'food':'melo','music':'deja vu'}`<br>
+`ra('minji',19,**extra)`
+
+>name:minji age:19 other:{'food':'melon','musci':'deja vu'}
+
+`**extra`表示把`extra`这个dict所有key-value用关键字参数传入函数的`**more`参数，`more`将获得一个dict——`extra`的拷贝，修改`more`不会影响`extra`。
+
+---
+
+**命名关键字参数**
+如果要限制关键字参数的名字，就可以用命名关键字参数。
+
+>`def people(name,age,*,city,job):`<br>
+  `print(name,age,city,job)`<br>
+`*`后面的参数被视为命名关键字参数。
+
+调用方式：
+>`people('yujin',19,city='seoul',job='dancer')`
+
+- 如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符`*`。
+- 命名关键字参数必须传入参数名。否则将报错。
+- 命名关键字参数可以设置默认值。传入时可以不传入已设置默认值的参数。
+  
+---
+
+**参数组合**
+
+>- 在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。
+
+>- 但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。
+
+
+定义一个函数：
+>`def test1(a,b,c=0,*x1,**x2):`<br>
+`print('a=',a,'b=',b,'c=',c,'x1=',x1,'x2=',x2)`
+
+
+测试一：
+>`test1(1,2,c=3,'a','b',ditto=oh)`<br>
+
+结果：
+>a=1 b=2 c=3 x1=('a','b') x2={'ditto':oh}
+
+测试二：
+>`x1=(1,2,3,4)`<br>
+`x2={'priority':good,'s':'&'}`<br>
+`test1(*x1,**x2)`
+
+结果：
+>`a=1 b=2 c=3 x1=(4,) x2={'priority':good,'s':'&'}`
+
+
+- 虽然可以组合多达5种参数，但不要同时使用太多组合，否则函数接口的可理解性很差。
