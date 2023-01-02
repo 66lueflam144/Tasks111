@@ -271,7 +271,7 @@ ps:
 
 - for循环后面还可以加上if判断。
 - 还可以使用两层循环，生成全排列。
-- `if...else`使用例子：`[x if x%2==0 else -x for x in range(1,11)]`——**在一个列表生成式中，`for`前的`if...else`是表达式，而`for`后面的`if`是过滤条件，不能带`else`。
+- `if...else`使用例子：`[x if x%2==0 else -x for x in range(1,11)]`——**在一个列表生成式中，`for`前的`if...else`是表达式，而`for`后面的`if`是过滤条件，不能带`else`。**
 
 <br>
 
