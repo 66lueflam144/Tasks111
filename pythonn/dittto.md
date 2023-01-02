@@ -253,8 +253,11 @@ ps:
 
 >如果给定一个list或tuple，我们可以通过for循环来遍历这个list或tuple，这种遍历我们称为迭代。
 
-- 在`list`或者`tuple`或者字符串里：<br>`for value in values`
-- 在`dict`里:<br>迭代value`for value in d.values`<br>`for k(,v)in d.items`
+| `list`or `tuple`or 字符串| **`dict`**|
+|---|---|
+|`for value in values`|`for value in d.values`<br>`for k(,v)in d.items`|
+|例子：<br>`for x in s`|例子：<br>`d={'x':'money','y':'why','z':'hey'}`<br>`for k,v in d.items():`<br>`print(k,'=',v)`|
+
 - 打印索引-元素对(enumerate函数)：<br>`for i,value in enumerate(['a','b'])`<br>`0 a`<br>`1 b`
 - 同时引用多个变量：`for x,y in [(1,2),(2,3)]`
   
@@ -262,4 +265,25 @@ ps:
 
 ##### **列表生成式**
 
+>生成list使用`list(range(1,11))`——1到10.
 
+>`[x*x for x in range(1,11)]`<br>即`L=[]`<br>`for x in range(1,11):`<br>`L.append(x*x)`
+
+- for循环后面还可以加上if判断。
+- 还可以使用两层循环，生成全排列。
+- `if...else`使用例子：`[x if x%2==0 else -x for x in range(1,11)]`——**在一个列表生成式中，`for`前的`if...else`是表达式，而`for`后面的`if`是过滤条件，不能带`else`。
+
+<br>
+
+|if判断|两层循环|两个变量|
+|---|---|---|
+|`[x*x for x in range(1,11) if x%2==0]`|`[m+n for m in 'money' for n in 'lisa']`|`d={'x':'a','y':'b','z':'c'}`<br>`[k + '=' + v for k,v in d.items()]`|
+
+
+
+
+
+
+
+
+（面向对象程序设计，创建对象，方法定义，调用，掌握面向对象的特性，文件操作，爬取网站资源，如何爬取）
