@@ -224,6 +224,7 @@ ps:
 
 ##### **切片**
 <br>
+
 ----
 
 **LIST**：
@@ -279,11 +280,77 @@ ps:
 |---|---|---|
 |`[x*x for x in range(1,11) if x%2==0]`|`[m+n for m in 'money' for n in 'lisa']`|`d={'x':'a','y':'b','z':'c'}`<br>`[k + '=' + v for k,v in d.items()]`|
 
+---
+
+##### **生成器**
+
+>一边循环一边计算的机制
+
+`g=(x*x for x in range(10))`<br>
+- list和generator区别在于`[]`和`()`
+- 使用for循环打印（generator也是可迭代对象）：<br>`for n in g:`<br>`print(n)`
+- 用`for`循环调用generator时拿不到`return`语句的返回值，如果想拿到返回值，必须捕获`StopIteration`错误，返回值包含在`StopIteration`的`value`中。
+- generator函数在执行过程中，遇到`yield`就中断，下次又继续执行。
+
+<a href=https://www.liaoxuefeng.com/wiki/1016959663602400/1017318207388128>生成器应用的具体例子</a>
+
+---
+
+
+##### **迭代器**
+
+
+>可以被`next()`函数调用并不断返回下一个值的对象被称为迭代器：`Iterator`。
+
+- 生成器都是`Iterator`对象，但`list`,`dict`,`str`是`Iterable`不是`Iterator`。使用`iter()`函数可以将其变成`Iterator`。
+
+---
+
+#### **函数式编程**
+
+----
+
+##### **高阶函数**
+>一个函数接收另一个函数作为参数，该函数称为高阶函数。
+
+example：`def add(x,y,f):`<br>$~~~~~~~~~~~~~~~~~~~~$`return f(x)+f(y)`<br>其中f传入一个函数如`abs`。
+
+---
+
+**map/reduce**
+
+>`map()`函数接收两个参数，一个是函数，一个是`Iterable`。`map()`将传入的函数依次作用到序列的每个元素，并把结果作为新的`Iterator`返回。
+
+
+例子：<br>
+`def f(x):`<br>
+$~~~~~~$`return x*x`<br>
+`r=map(f,[1,2,3])`<br>
+$~~~~~~$`print(list(r))`<br>
+得到结果：`[1,4,9]`
+- 结果r是一个`Iterator`——惰性序列——因此通过`list()`函数让它把整个序列都计算出来并返回一个list。
+  
+>`reduce()`把一个函数作用在一个序列[x1,x2,x3,x3...]上，该函数必须接收两个参数。
+
+例子：<br>
+`from functools impot reduce`<br>
+`def add(x,y):`<br>
+$~~~~~~~~$`return x+y`<br>
+`print(reduce(add,[1,2,3]))`<br>
+
+结果是6
+
+<br>感觉常用于转换数据类型。
+
+
+ps：
+>函数本身可以赋值给变量，即变量可以指向函数。
+example:`f=abs`<br>`f(-10)`
+
+>函数名是指向函数的变量。
 
 
 
 
 
-
-
-（面向对象程序设计，创建对象，方法定义，调用，掌握面向对象的特性，文件操作，爬取网站资源，如何爬取）
+（面向对象&emsp;程序设计，创建对&nbsp;象，方法&ensp;定义，调用，掌握面向对象的特性，文件操作，爬取网站资源，如何爬取）
