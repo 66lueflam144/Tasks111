@@ -449,5 +449,41 @@ ps：
 - 实例属性——通过实例变量或者`self`变量给实例绑定属性
 - 类属性——直接在class定义中定义的属性
 
+
+
+----
+
+### **关于文件的操作**
+
+#### **文件操作**
+
+##### **文件打开与关闭**
+
+|打开&emsp;open()|关闭&emsp;close()|
+|---|---|
+|`f=open('/path/to/file','r')`|`f.close()`|
+|如果文件打开成功，调用`read()`方法一次性读取全部内容。|文件使用完毕后必须关闭|
+
+
+不过常用版本是：
+>`with open('/path/to/file',r') as f:`<br>$~~~~$`print(f.read())`
+
+(作为`try:`<br>$~~~~~$`f=open('path/to/file','r')`<br>$~~~~~$`print(f.read())`<br>`finally:`<br>$~~~~~$`if f:`<br>$~~~~~~~~~~$`f.close()`<br>的简化版)
+
+- 调用不确定大小的文件，为了保险起见，需要反复调用`read(size)`方法。
+- 配置文件，调用`readlines()`发发最方便。
+
+----
+##### **写文件**
+
+基本与读取文件一致，区别在于调用`open()`函数，传入标识符为`w`或`wb`。
+
+例子：<br>
+`f=open('/path/to/file','w')`<br>$~~~~~~~$`f.write('i dot to ride til i die die')`<br>$~~~~~~~$`f.close()`
+
+或者(常用)<br>
+`with open('/path/to/file','w') as f:`<br>$~~~~~~~$`f.write('antitifragile')`
+
+
 ----
 （面向对象&emsp;程序设计，创建对&nbsp;象，方法&ensp;定义，调用，掌握面向对象的特性，文件操作，爬取网站资源，如何爬取）
