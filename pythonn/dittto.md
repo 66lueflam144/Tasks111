@@ -408,7 +408,7 @@ ps：
 例子：
 `class animal(object):`<br>
 $~~~~~$`def run(self):`<br>
-$~~~~~$`print('animal is running...')`
+$~~~~~$`print('animal is running...')`<br>
 $~~~~~~~~~~~~~~$
 `class dog(animal):`<br>
  $~~~~~$`pass`
@@ -483,6 +483,43 @@ ps：
 
 或者(常用)<br>
 `with open('/path/to/file','w') as f:`<br>$~~~~~~~$`f.write('antitifragile')`
+
+- 如果以`w`模式写入文件时，文件已经存在，会直接覆盖——相当于删除后重新写入一个文件。
+- 如果希望追加内容到文件末尾，传入`a`以`append`模式写入。
+
+----
+
+##### **StriIO和BytesIO**
+
+|StringIO|BytesIO|
+|---|---|
+|在内存中读写str|在内存中读写bytes|
+|`from io import StringIO`|`from io import BytesIO`|
+
+---
+
+##### **操作文件和目录**
+
+python交互式命令行中使用`os`模块。
+
+- *查看当前目录的绝对路径*：<br>`os.path.abspath('.')`
+- *在某个目录下创建一个新目录*：
+  - *首先把新目录的完整路径表示出来*：<br>`os.path.join('/path/to','testdir')`
+  - *然后创建一个目录*：<br>`os.mkdir('/path/to/testdir')`
+  - *ps:删掉一个目录*：`os.rmdir('path/to/testdir)`
+  
+
+<a href=https://www.liaoxuefeng.com/wiki/1016959663602400/1017623135437088>more & more</a>
+
+---
+
+##### **序列化**
+
+>把变量从内存中变成可存储或传输的过程称之为序列化.<br><br>序列化之后，就可以把序列化后的内容写入磁盘，或者通过网络传输到别的机器上。<br><br>反过来，把变量内容从序列化的对象重新读到内存里称之为反序列化.
+
+
+- `pickle.dumps()`直接将对象序列化后写入一个`file-like Object`:<br>`f=open('dump.txt','wb')`<br>`ppickle.dump(d,f)`<br>`f.close()`
+- 当我们把对象从磁盘读到内存时，可以先把内容读到一个`bytes`然后用`pickle.loads()`方法反序列化出对象，也可以直接用`pickle.load()`方法从一个`file-like Object`中直接反序列化出对象。
 
 
 ----
