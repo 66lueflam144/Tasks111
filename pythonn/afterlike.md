@@ -6,6 +6,9 @@
 （4）保存数据：数据解析完成后，将保存下来。既可以存为文本文档，亦可以存到数据库中。
  
 ---
+&emsp;:grinning:<a href="https://zhuanlan.zhihu.com/p/355797583">a good thing</a>
+
+---
 
 ## python爬出：
 - （1）安装requests库和BeatifulSoup库。
