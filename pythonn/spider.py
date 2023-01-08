@@ -7,7 +7,6 @@ from urllib.request import urlopen
 from PIL import Image
 from io import BytesIO
 
-img1='https://itawenya.cn/img/time.png'
 url1="https://itawenya.cn/"
 
 rep=requests.get(url1)
