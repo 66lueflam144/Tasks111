@@ -26,4 +26,5 @@
 <a href="https://github.com/66lueflam144/Tasks111/blob/main/pythonn/dittto.md">学习笔记</a><br>
 <a href="https://github.com/66lueflam144/Tasks111/blob/main/pythonn/afterlike.md">一些待实践的</a><br>
 <a href="https://github.com/66lueflam144/Tasks111/blob/main/pythonn/spider.py">爬虫代码图片</a><br>
+<a href="https://github.com/66lueflam144/Tasks111/blob/main/pythonn/qiebai.py">爬虫代码文字</a>
 <a href="https://github.com/66lueflam144/Tasks111/tree/main/pythonn/shitofspider">爬虫代码结果</a>
